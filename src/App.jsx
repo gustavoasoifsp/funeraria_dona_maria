@@ -1,6 +1,6 @@
 
 import './App.css'
-import Topo from ./components/Topo
+import Topo from './components/Topo'
 
 function App() {
   

@@ -4,13 +4,15 @@ export default function Topo() {
     return (
         <header>
             <div className='anuncio'>
-                <p>10x sem juros</p>
+                <div className="anuncio-conteudo">
+                    <p>10x sem juros</p>
+                </div>
             </div>
 
             <div className='topo'>
                 <picture>
                     <a href="#">
-                        <img src="./"/>
+                        <img src="./public/funerariaLogo.png"/>
                     </a>
                 </picture>
 

@@ -4,10 +4,13 @@
     --primary-color: #88857D;
     --secondary-color: #595421;
     --title: #E3D6CA;
+    --contrast: #BFA78A;
     --background: #323530;
     --text-base: #E3D6CA;
     --text-color: #323530;
     --cta: #e8b43a;
+    --gradient1: linear-gradient(135deg, #88857D, #BFA78A);
+    --gradient2: linear-gradient(135deg, #595421, #323530);
     --font-title: "monsieur la doulaise", serif;
     --font-base: "gelasio", serif;
 }
@@ -34,4 +37,74 @@ img {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 32px;
+    background: var(--gradient1);
+    color: var(--text-base);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: var(--gradient2);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
+}
+
+.anuncio {
+    background-color: var(--background);
+    color: var(--text-base);
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.anuncio-conteudo {
+    /* display: inline-block; */
+    overflow: hidden;
+}
+
+.anuncio-conteudo p {
+    /* display: inline-block; */
+    animation: textoCorrido 10s linear infinite;
+}
+
+@keyframes textoCorrido {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: var(--text-base);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topo img {
+    max-width: 150px;
+}
+
+.topo nav {
+    display: flex;
+    gap: 30px;
 }
