@@ -76,7 +76,7 @@ img {
 
 .anuncio-conteudo p {
     /* display: inline-block; */
-    animation: textoCorrido 10s linear infinite;
+    animation: textoCorrido 20s linear infinite;
 }
 
 @keyframes textoCorrido {
@@ -101,10 +101,54 @@ img {
 }
 
 .topo img {
-    max-width: 150px;
+    max-width: 100px;
+    border-radius: 2px;
 }
 
 .topo nav {
     display: flex;
     gap: 30px;
+}
+
+.topo nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--text-color);
+    padding: 8px 12px;
+    transition: all 0,3s ease;
+    position: relative;
+}
+
+.topo nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.topo nav a:hover::after {
+    width: 100%;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .topo {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    .topo img {
+        max-width: 30px;
+    }
+
+    .topo nav a {
+        font-size: 12px;
+    }
 }
