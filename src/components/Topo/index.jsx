@@ -12,7 +12,7 @@ export default function Topo() {
             <div className='topo'>
                 <picture>
                     <a href="#">
-                        <img src="./public/funerariaLogo.png"/>
+                        <img src="./public/logo.png"/>
                     </a>
                 </picture>
 
