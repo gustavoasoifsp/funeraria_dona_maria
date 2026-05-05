@@ -1,8 +1,8 @@
-import './Capa.css'
+import './Banner.css'
 import banner from '../../../public/banner.jpg'
-import bannerMobile from '../../../public/banner_mobile.jpg';
+// import bannerMobile from '../../../public/banner_mobile.jpg'
 
-export default function Capa() {
+export default function Banner() {
     return (
         <section className='secao_banner'
             style={{
@@ -10,11 +10,12 @@ export default function Capa() {
             }}
         >
 
-            <div className="texto">
+            <div className='texto'>
                 <h2>Preview</h2>
-                <h1>Verão</h1>
-                <button className="btn">Comprar</button>
+                <h1>Verão 2026</h1>
+                <button className='btn'>Comprar</button>
             </div>
+
         </section>
     )
 }
